@@ -1,4 +1,4 @@
-package github;
+package cingo;
 
 import com.codeborne.selenide.Condition;
 import com.codeborne.selenide.Configuration;
@@ -12,11 +12,9 @@ import static com.codeborne.selenide.Selectors.byText;
 import static com.codeborne.selenide.Selenide.$;
 import static com.codeborne.selenide.Selenide.open;
 
-public class TestsForCingo {
+public class TestsForCingo extends Config{
 
-    public int randomNumber(int minValue, int maxValue) {
-        return minValue + (int) (Math.random() * (maxValue - minValue + 1));
-    }
+
 
     SecureRandom secureRandom = new SecureRandom();
 
@@ -25,11 +23,7 @@ public class TestsForCingo {
     private String passwordForLogin = "Test123456!";
     private String numberForCode = "0";
 
-    @BeforeAll
-    static void browserSettings() {
-        Configuration.browser = "FIREFOX";
-        Configuration.startMaximized = true;
-    }
+
 
 
     @Test
