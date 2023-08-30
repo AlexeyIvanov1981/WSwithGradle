@@ -1,29 +1,21 @@
 package cingo;
 
 import com.codeborne.selenide.Condition;
-import com.codeborne.selenide.Configuration;
-import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.Test;
 
 import java.security.SecureRandom;
 
-import static com.codeborne.selenide.Condition.text;
 import static com.codeborne.selenide.Selectors.byText;
 import static com.codeborne.selenide.Selenide.$;
 import static com.codeborne.selenide.Selenide.open;
 
-public class TestsForCingo extends Config{
+public class TestsForCingo extends Config {
 
-
-
-    SecureRandom secureRandom = new SecureRandom();
 
     private String url = "https://app.dev.cingo.co/";
     private String userNameForLogin = "Tester11";
     private String passwordForLogin = "Test123456!";
     private String numberForCode = "0";
-
-
 
 
     @Test
